@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+// Primary colors
+$blue: #4358d0;
+$purple: #30475e;
+$orange: #ffcb71;
+$black:#504f4f;
+
+// Secondary colors
+$lightYellow: #f8f0c5;
+$lightBlue: #e1f7f7;
+$faintWhite: #fdfdfd;
+
+
+// Font Size / Weight
+$headerSize: 2.5rem;
+$headerWeight: 800;
+$paragraphSize: 0.9rem;
+$paragraphWeight: 400;
+
+// Flex Mixin
+@mixin flex($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+// Font Mixin
+@mixin primary-font($size, $weight) {
+    font-family: 'Nunito', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+%glassmorphism {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(218, 216, 216, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
